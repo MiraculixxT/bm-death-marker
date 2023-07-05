@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "bm-death-marker",
+  "version": "150",
+
+  "name": "BlueMap Death Marker",
+  "description": "A BlueMap addition plugin. Players leave a death marker to find their death locations",
+  "authors": ["Miraculixx"],
+  "contact": {
+    "homepage": "https://mutils.net/",
+    "sources": "https://github.com/MiraculixxT/bluemap-death-marker"
+  },
+
+  "license": "MIT",
+  "icon": "assets/bm-death-marker/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "de.miraculixx.bmdm.BMDMarker"
+      }
+    ]
+  },
+  "mixins": [],
+
+  "custom": {
+    "modmenu": {
+      "parent": "bluemap"
+    }
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.20",
+    "java": ">=17",
+    "bluemap": "*"
+  },
+  "suggests": {}
+}
